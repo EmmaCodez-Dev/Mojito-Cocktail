@@ -15,6 +15,7 @@ import Navbar from "./components/Navbar";
 import gsap from "gsap";
 import { ScrollTrigger, SplitText } from "gsap/all";
 import Cocktails from "./components/Cocktails";
+import About from "./components/About";
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const App = () => {
@@ -43,7 +44,7 @@ const App = () => {
       lenis.destroy();
     };
   }, []);
-  
+
   {
     /* <div>
   <Home />
@@ -62,7 +63,8 @@ const App = () => {
       <div className="lenis-content">
         <Navbar />
         <Hero />
-        <Cocktails/>
+        <Cocktails />
+        <About />
       </div>
     </main>
   );
