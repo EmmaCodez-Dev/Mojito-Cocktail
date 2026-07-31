@@ -14,6 +14,7 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import gsap from "gsap";
 import { ScrollTrigger, SplitText } from "gsap/all";
+import Cocktails from "./components/Cocktails";
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const App = () => {
@@ -42,22 +43,26 @@ const App = () => {
       lenis.destroy();
     };
   }, []);
+  
+  {
+    /* <div>
+  <Home />
 
+  <GsapFrom />
+  <GsapFromTo />
+  <GsapScrollTrigger />
+  <GsapStagger />
+  <GsapText />
+  <GsapTimelime />
+  <GsapTo />
+  </div> */
+  }
   return (
     <main className="lenis-wrapper">
       <div className="lenis-content">
-      {/* <Home /> */}
-      {/* <GsapFrom />
-      <GsapFromTo />
-      <GsapScrollTrigger />
-      <GsapStagger />
-      <GsapText />
-      <GsapTimelime />
-      <GsapTo /> */}
-
         <Navbar />
         <Hero />
-        <div className="h-dvh bg-black" />
+        <Cocktails/>
       </div>
     </main>
   );
